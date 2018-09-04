@@ -7,7 +7,23 @@ body {
 
 
 /*Parametri NavBar*/
-.topnav {
+.topNav{
+    background-color: #808080;
+}
+
+.topNav li img {
+    padding: 10px;
+}
+
+.topNav li {
+    padding-left: 10px;
+}
+
+.topNav li h1 {
+    color: white;
+}
+
+.nav {
     top: 0;
     padding: 0;
     margin: 0;
