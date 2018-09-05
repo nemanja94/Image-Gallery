@@ -2,110 +2,129 @@
 
 <head>
     <title>Strax Gallery - v2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <script type="text/javascript" src="javascript/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
-
     <ul class="topNav">
         <li><img src="images/strax.jpg" alt=""></li>
-        <li><h1>Strahinja Ansjelkovic</h1></li>
+        <li>
+            <h1>Strahinja Anđelkovic</h1>
+            <br>
+            <h4>Ambicozni fotograf</h4>
+        </li>
     </ul>
-
     <div class="nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li style="float:right"><a class="active" href="#about">About</a></li>
-        </ul>
+        <div class="w3-container">
+            <h2>Moja Galerija</h2>
+            <div class="w3-row">
+                <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">London</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Paris</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+                </a>
+            </div>
+        </div>
     </div>
-
-    <div class="gallery">
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
-        <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
-        <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
-        <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
-        <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
-        <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
-        <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
-        <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
-        <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
-        <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
-        <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
+    <div id="London" class="w3-container city" style="display:none">
+        <h2>London</h2>
+        <div class="gallery">
+            <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
+            <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
+            <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
+            <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
+            <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
+            <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
+            <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
+            <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
+            <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
+            <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
+            <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
+            <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
+            <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
+            <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
+            <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
+            <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
+            <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
+            <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
+            <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
+            <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
+        </div>
     </div>
-
+    <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <div class="gallery">
+            <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
+            <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
+            <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
+            <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
+            <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
+            <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
+            <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
+            <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
+            <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
+            <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
+            <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
+            <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
+            <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
+            <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
+            <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
+            <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
+            <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
+            <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
+            <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
+            <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
+        </div>
+    </div>
+    <div id="Tokyo" class="w3-container city" style="display:none">
+        <h2>Tokyo</h2>
+        <div class="gallery">
+            <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
+            <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
+            <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
+            <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
+            <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
+            <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
+            <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
+            <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
+            <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
+            <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
+            <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
+            <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
+            <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
+            <a href="images/large4.jpg" data-lightbox="pic" data-title="Pic4"><img src="images/pico4.jpg"></a>
+            <a href="images/large5.jpg" data-lightbox="pic" data-title="Pic5"><img src="images/pico5.jpg"></a>
+            <a href="images/large6.jpg" data-lightbox="pic" data-title="Pic6"><img src="images/pico6.jpg"></a>
+            <a href="images/large7.jpg" data-lightbox="pic" data-title="Pic7"><img src="images/pico7.jpg"></a>
+            <a href="images/large8.jpg" data-lightbox="pic" data-title="Pic8"><img src="images/pico8.jpg"></a>
+            <a href="images/large9.jpg" data-lightbox="pic" data-title="Pic9"><img src="images/pico9.jpg"></a>
+            <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
+        </div>
+    </div>
+    <script>
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-border-red";
+    }
+    </script>
 </body>
 
 </html>
