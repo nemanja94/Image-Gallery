@@ -8,36 +8,54 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <script type="text/javascript" src="javascript/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <ul class="topNav">
+<body class="bg-dark">
+    <!-- <ul class="topNav">
         <li><img src="images/strax.jpg" alt=""></li>
         <li>
             <h1>Strahinja Anđelkovic</h1>
             <br>
             <h4>Ambicozni fotograf</h4>
         </li>
-    </ul>
-    <div class="nav">
-        <div class="w3-container">
-            <h2>Moja Galerija</h2>
-            <div class="w3-row">
+    </ul> -->
+    <div class="container bg-danger p-0 mb-5 rounded">
+        <div class="row">
+            <div class="column ml-2">
+                <img class="img-fluid ml-5 mb-4 rounded-bottom shadow" src="images/strax.jpg" alt="">
+            </div>
+            <div class="column ml-3 mt-2">
+                <h1 class="text-light">Strahinja Anđelković</h1>
+                <p class="text-light mt-5">Profesionalni fotograf</p>
+                <p class="text-light">Volim fotografisanje i hvalisanje Mate 10 pro kamerom</p>
+                <p class="text-light">Volim da na Moto G5 Plus svakog treceg dana podizem novi rom</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container rounded shadow nav">
+        <div class="container ">
+            <h2 class="text-dark">Moja Galerija</h2>
+            <div class="container text-center w3-row">
                 <a href="javascript:void(0)" onclick="openCity(event, 'London');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">London</div>
+                    <div class="text-info w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">London</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Paris</div>
+                    <div class="text-info w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Paris</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+                    <div class="text-info w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
                 </a>
             </div>
         </div>
     </div>
-    <div id="London" class="w3-container city" style="display:none">
-        <h2>London</h2>
-        <div class="gallery">
+    <div id="London" class="container city" style="display:none">
+        <h2 class="text-light mt-4">London</h2>
+        <div class="container bg-danger rounded shadow mb-5 pb-4 gallery">
             <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
             <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
             <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
@@ -60,9 +78,9 @@
             <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
         </div>
     </div>
-    <div id="Paris" class="w3-container city" style="display:none">
-        <h2>Paris</h2>
-        <div class="gallery">
+    <div id="Paris" class="container  city" style="display:none">
+        <h2 class="text-light mt-4">Paris</h2>
+        <div class="container bg-danger rounded shadow mb-5 pb-4 gallery">
             <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
             <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
             <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
@@ -85,9 +103,9 @@
             <a href="images/large10.jpg" data-lightbox="pic" data-title="Pic10"><img src="images/pico10.jpg"></a>
         </div>
     </div>
-    <div id="Tokyo" class="w3-container city" style="display:none">
-        <h2>Tokyo</h2>
-        <div class="gallery">
+    <div id="Tokyo" class="container  city" style="display:none">
+        <h2 class="text-light mt-4">Tokyo</h2>
+        <div class="container bg-danger rounded shadow mb-5 pb-4 gallery">
             <a href="images/large1.jpg" data-lightbox="pic" data-title="Pic1"><img src="images/pico1.jpg"></a>
             <a href="images/large2.jpg" data-lightbox="pic" data-title="Pic2"><img src="images/pico2.jpg"></a>
             <a href="images/large3.jpg" data-lightbox="pic" data-title="Pic3"><img src="images/pico3.jpg"></a>
@@ -111,19 +129,19 @@
         </div>
     </div>
     <script>
-    function openCity(evt, cityName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-border-red";
         }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.firstElementChild.className += " w3-border-red";
-    }
     </script>
 </body>
 
