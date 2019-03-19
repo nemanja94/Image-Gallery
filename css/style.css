@@ -1,88 +1,85 @@
 /*Body parametri*/
 body {
-    font-family: Impact;
-    margin-top: 0;
-    background-color: whitesmoke;
+  font-family: Impact;
+  margin-top: 0;
+  background-color: whitesmoke;
 }
 
-
-
 /*Parametri NavBar*/
-.topNav{
-    background-color: #808080;
-    margin-left: 1%;
-    margin-right: 1%;
+.topNav {
+  background-color: #808080;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .topNav li img {
-    padding: 10px;
+  padding: 10px;
 }
 
 .topNav li {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .topNav li h1 {
-    color: white;
+  color: white;
 }
 
 .topNav li h4 {
-    color: #3232FF;
+  color: #3232ff;
 }
 
 .nav {
-    top: 0;
-    padding: 0;
-    margin: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 1;
-    background-color: whitesmoke;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  background-color: whitesmoke;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+  background-color: #111;
 }
 
 .active {
-    background-color: #4CAF50;
+  background-color: #4caf50;
 }
-
 
 /*Parametri galerije*/
 .gallery {
-    text-align: center;
-    padding-top: 100px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .gallery img {
-    width: 230px;
-    padding: 5px;
-    filter: grayscale(100%);
-    transition: 1s;
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
 }
 
 .gallery img:hover {
-    filter: grayscale(0);
-    transform: scale(1.1);
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
